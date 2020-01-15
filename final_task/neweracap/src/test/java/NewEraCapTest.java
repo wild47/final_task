@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
@@ -7,11 +8,12 @@ import pages.HomePage;
 import pages.LogInPage;
 
 import static com.codeborne.selenide.Configuration.startMaximized;
+import static com.codeborne.selenide.Configuration.timeout;
 import static com.codeborne.selenide.Selenide.clearBrowserCookies;
 import static com.codeborne.selenide.WebDriverRunner.isChrome;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class LogInTest {
+public class NewEraCapTest {
 
     HomePage homePage;
     LogInPage logInPage;
@@ -20,6 +22,7 @@ public class LogInTest {
     public void setUp() {
         isChrome();
         startMaximized = true;
+        timeout = 4000;
         homePage = new HomePage();
         logInPage = new LogInPage();
     }
@@ -41,9 +44,27 @@ public class LogInTest {
     }
 
     @Test
-    public void bla() {
+    public void checkThatCitySeriesCapsContainsTwelveCaps() {
         homePage.openBaseUrl();
-        homePage.getListOfCapsBlack();
+        homePage.citySeriesCapsContainsTwelveCaps();
+    }
+
+    @Test
+    public void checkThatTeenageMutantNinjaTurtlesContainsTwelveCaps() throws InterruptedException {
+        homePage.openBaseUrl();
+        homePage.teenageMutantNinjaTurtlesContainsTwelveCaps();
+    }
+
+    @Test
+    public void checkThatNflPlayOffsCapsContainsTwelveCaps() {
+        homePage.openBaseUrl();
+        homePage.nflPlayOffsCapsContainsTwelveCaps();
+    }
+
+    @Test
+    public void checkThatAstrologyClothesContainsTwelveCaps() {
+        homePage.openBaseUrl();
+        homePage.astrologyClothesContainsTwelveCaps();
     }
 
 }
