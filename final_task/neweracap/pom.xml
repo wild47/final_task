@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>final_task</artifactId>
+        <groupId>com.epam.dmytro_adamtsev</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>neweracap</artifactId>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <mvn.compiler.version>3.7.0</mvn.compiler.version>
+        <mvn.surefire.version>2.16</mvn.surefire.version>
+        <serenity.version>2.0.91</serenity.version>
+        <serenity.cucumber.version>1.9.50</serenity.cucumber.version>
+        <serenity.junit.version>2.0.91</serenity.junit.version>
+        <junit.version>4.12</junit.version>
+        <selenide.version>5.6.0</selenide.version>
+        <assertj.version>3.14.0</assertj.version>
+        <htmlelements.version>1.8</htmlelements.version>
+        <testng.version>7.1.0</testng.version>
+    </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-cucumber</artifactId>
+            <version>${serenity.cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-core</artifactId>
+            <version>${serenity.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-junit</artifactId>
+            <version>${serenity.junit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>${selenide.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>ru.yandex.qatools.htmlelements</groupId>
+            <artifactId>htmlelements-java</artifactId>
+            <version>${htmlelements.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+
+
+    </dependencies>
+</project>

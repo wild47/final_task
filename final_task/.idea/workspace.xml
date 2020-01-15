@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc50a15b-7881-420a-8633-14ead3087d14" name="Default Changelist" comment="">
+    <list default="true" id="dc50a15b-7881-420a-8633-14ead3087d14" name="Default Changelist" comment="added">
+      <change afterPath="$PROJECT_DIR$/../Lessons/Java/17 lecture(Servlet Core)/task_with_servlets/task_with_servlets.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Parsing/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Parsing/testForParse.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neweracap/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/LogInPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neweracap/src/test/java/LogInTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../superpuper.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../supertest.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -27,23 +49,87 @@
     </option>
   </component>
   <component name="ProjectId" id="1WO381xg3POmz5SPIeiOykmNv3u" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lessons/Automation/aqa-rd-automation-q3/lesson7_selenoid_task/lesson7_selenoid_task.iml" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Dmytro_Adamtsev\Desktop\final_task" />
     </key>
+  </component>
+  <component name="RunManager" selected="TestNG.LogInTest.bla">
+    <configuration name="CucumberRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="neweracap" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CucumberRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogInTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="neweracap" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LogInTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogInTest.bla" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="neweracap" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LogInTest" />
+      <option name="METHOD_NAME" value="bla" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogInTest.logIn" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="neweracap" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LogInTest" />
+      <option name="METHOD_NAME" value="logIn" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.LogInTest.bla" />
+        <item itemvalue="TestNG.LogInTest.logIn" />
+        <item itemvalue="TestNG.LogInTest" />
+        <item itemvalue="JUnit.CucumberRunner" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -67,11 +153,79 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579006650145</updated>
-      <workItem from="1579006653028" duration="58000" />
+      <workItem from="1579006653028" duration="1345000" />
+      <workItem from="1579009783944" duration="9165000" />
+      <workItem from="1579086527848" duration="7452000" />
     </task>
+    <task id="LOCAL-00001" summary="1st push">
+      <created>1579006824076</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579006824076</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="1st push" />
+    <option name="LAST_COMMIT_MESSAGE" value="1st push" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1579013346179">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579013346179" />
+    <state x="756" y="379" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1579013284019">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="756" y="379" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1579013284019" />
+    <state x="105" y="117" key="CommitChangelistDialog2" timestamp="1579099443348">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="105" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579099443348" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1579099403205">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579099403205" />
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1579099142427">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579099142427" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1579099142426">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579099142426" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1579099142426">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579099142426" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1579099142427">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579099142427" />
+    <state x="72" y="256" key="Vcs.Push.Dialog.v2" timestamp="1579006856898">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="72" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579006856898" />
+    <state x="316" y="430" key="new project wizard" timestamp="1579009572949">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="316" y="430" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1579009572949" />
   </component>
 </project>
