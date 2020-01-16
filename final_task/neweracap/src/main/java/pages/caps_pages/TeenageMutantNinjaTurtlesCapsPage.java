@@ -1,4 +1,4 @@
-package pages.caps;
+package pages.caps_pages;
 
 import com.codeborne.selenide.ElementsCollection;
 

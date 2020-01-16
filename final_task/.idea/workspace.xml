@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc50a15b-7881-420a-8633-14ead3087d14" name="Default Changelist" comment="added">
+    <list default="true" id="dc50a15b-7881-420a-8633-14ead3087d14" name="Default Changelist" comment="minor changes for better working">
+      <change afterPath="$PROJECT_DIR$/neweracap/src/test/java/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neweracap/src/test/java/pages/caps_pages/CapsElementsPagesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps/AstrologyCapsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps_pages/AstrologyCapsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps/CitySeriesCapsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps_pages/CitySeriesCapsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps/NflPlayoffsCapsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps_pages/NflPlayoffsCapsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps/TeenageMutantNinjaTurtlesCapsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps_pages/TeenageMutantNinjaTurtlesCapsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neweracap/src/test/java/NewEraCapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/test/java/NewEraCapTest.java" afterDir="false" />
+    </list>
+    <list id="56c9698e-4580-4833-a10a-033b76ff6e2f" name="minor changes for better working" comment="">
       <change afterPath="$PROJECT_DIR$/../Lessons/Java/17 lecture(Servlet Core)/task_with_servlets/task_with_servlets.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Parsing/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Parsing/testForParse.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neweracap/debug.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../superpuper.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../supertest.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
@@ -54,6 +65,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lessons/Automation/aqa-rd-automation-q3/lesson7_selenoid_task/lesson7_selenoid_task.iml" />
@@ -66,13 +78,14 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Dmytro_Adamtsev\Desktop\final_task" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.NewEraCapTest (1)">
+  <component name="RunManager" selected="TestNG.NewEraCapTest">
     <configuration name="NewEraCapTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="neweracap" />
       <option name="PACKAGE_NAME" value="" />
@@ -107,6 +120,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NewEraCapTest.checkThatAstrologyClothesContainsTwelveCaps" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="neweracap" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NewEraCapTest" />
+      <option name="METHOD_NAME" value="checkThatAstrologyClothesContainsTwelveCaps" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NewEraCapTest.checkThatTeenageMutantNinjaTurtlesContainsTwelveCaps" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="neweracap" />
       <option name="PACKAGE_NAME" value="" />
@@ -119,25 +144,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewEraCapTest.logIn" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="neweracap" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NewEraCapTest" />
-      <option name="METHOD_NAME" value="logIn" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.NewEraCapTest (1)" />
         <item itemvalue="TestNG.NewEraCapTest" />
+        <item itemvalue="TestNG.NewEraCapTest.checkThatAstrologyClothesContainsTwelveCaps" />
+        <item itemvalue="TestNG.NewEraCapTest (1)" />
         <item itemvalue="TestNG.NewEraCapTest.checkThatTeenageMutantNinjaTurtlesContainsTwelveCaps" />
         <item itemvalue="TestNG.NewEraCapTest.bla" />
-        <item itemvalue="TestNG.NewEraCapTest.logIn" />
       </list>
     </recent_temporary>
   </component>
@@ -159,13 +172,17 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="dc50a15b-7881-420a-8633-14ead3087d14" name="Default Changelist" comment="" />
+      <changelist id="56c9698e-4580-4833-a10a-033b76ff6e2f" name="minor changes for better working" comment="" />
       <created>1579006650145</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579006650145</updated>
       <workItem from="1579006653028" duration="1345000" />
       <workItem from="1579009783944" duration="9165000" />
-      <workItem from="1579086527848" duration="15872000" />
+      <workItem from="1579086527848" duration="22557000" />
+      <workItem from="1579188419499" duration="145000" />
+      <workItem from="1579188586137" duration="1309000" />
+      <workItem from="1579189923049" duration="292000" />
     </task>
     <task id="LOCAL-00001" summary="1st push">
       <created>1579006824076</created>
@@ -195,7 +212,28 @@
       <option name="project" value="LOCAL" />
       <updated>1579172894296</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="minor changes">
+      <created>1579173263076</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579173263076</updated>
+    </task>
+    <task id="LOCAL-00006" summary="minor changes for better working">
+      <created>1579188177681</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579188177681</updated>
+    </task>
+    <task id="LOCAL-00007" summary="minor changes for better working">
+      <created>1579188499006</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1579188499006</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +244,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -218,7 +258,9 @@
     <MESSAGE value="added some pages and tests" />
     <MESSAGE value="added tests with collections" />
     <MESSAGE value="added pages for collection pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="added pages for collection pages" />
+    <MESSAGE value="minor changes" />
+    <MESSAGE value="minor changes for better working" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes for better working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1579013346179">
@@ -229,38 +271,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="379" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1579013284019" />
-    <state x="105" y="117" key="CommitChangelistDialog2" timestamp="1579172892695">
+    <state x="105" y="117" key="CommitChangelistDialog2" timestamp="1579188497164">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="105" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579172892695" />
+    <state x="105" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579188497164" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1579099403205">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579099403205" />
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1579105028187">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1579188404496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579105028187" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1579105028187">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579188404496" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1579188404496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579105028187" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1579105028187">
+    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579188404496" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1579188404496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579105028187" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1579105028187">
+    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579188404496" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1579188404496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579105028187" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1579103860757">
+    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579188404496" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1579189904574">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579103860757" />
-    <state x="72" y="256" key="Vcs.Push.Dialog.v2" timestamp="1579172897861">
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579189904574" />
+    <state x="807" y="435" key="VCS.ChangelistChooser" timestamp="1579188200391">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="72" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579172897861" />
+    <state x="807" y="435" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579188200391" />
+    <state x="72" y="256" key="Vcs.Push.Dialog.v2" timestamp="1579188550327">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="72" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579188550327" />
     <state x="316" y="430" key="new project wizard" timestamp="1579009572949">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
