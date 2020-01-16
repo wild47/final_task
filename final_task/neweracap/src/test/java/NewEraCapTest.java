@@ -18,12 +18,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class NewEraCapTest {
 
-    HomePage homePage;
-    LogInPage logInPage;
-    CitySeriesCapsPage citySeriesCapsPage;
-    TeenageMutantNinjaTurtlesCapsPage teenageMutantNinjaTurtlesCapsPage;
-    NflPlayoffsCapsPage nflPlayoffsCapsPage;
-    AstrologyCapsPage astrologyCapsPage;
+    private HomePage homePage;
+    private LogInPage logInPage;
+    private CitySeriesCapsPage citySeriesCapsPage;
+    private TeenageMutantNinjaTurtlesCapsPage teenageMutantNinjaTurtlesCapsPage;
+    private NflPlayoffsCapsPage nflPlayoffsCapsPage;
+    private AstrologyCapsPage astrologyCapsPage;
 
     @BeforeClass
     public void setUp() {
