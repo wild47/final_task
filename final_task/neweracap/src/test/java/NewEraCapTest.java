@@ -1,4 +1,3 @@
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
@@ -6,6 +5,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LogInPage;
+import pages.caps.AstrologyCapsPage;
+import pages.caps.CitySeriesCapsPage;
+import pages.caps.NflPlayoffsCapsPage;
+import pages.caps.TeenageMutantNinjaTurtlesCapsPage;
 
 import static com.codeborne.selenide.Configuration.startMaximized;
 import static com.codeborne.selenide.Configuration.timeout;
@@ -17,6 +20,10 @@ public class NewEraCapTest {
 
     HomePage homePage;
     LogInPage logInPage;
+    CitySeriesCapsPage citySeriesCapsPage;
+    TeenageMutantNinjaTurtlesCapsPage teenageMutantNinjaTurtlesCapsPage;
+    NflPlayoffsCapsPage nflPlayoffsCapsPage;
+    AstrologyCapsPage astrologyCapsPage;
 
     @BeforeClass
     public void setUp() {
@@ -25,6 +32,10 @@ public class NewEraCapTest {
         timeout = 4000;
         homePage = new HomePage();
         logInPage = new LogInPage();
+        citySeriesCapsPage = new CitySeriesCapsPage();
+        teenageMutantNinjaTurtlesCapsPage = new TeenageMutantNinjaTurtlesCapsPage();
+        nflPlayoffsCapsPage = new NflPlayoffsCapsPage();
+        astrologyCapsPage = new AstrologyCapsPage();
     }
 
     @AfterClass
@@ -46,25 +57,29 @@ public class NewEraCapTest {
     @Test
     public void checkThatCitySeriesCapsContainsTwelveCaps() {
         homePage.openBaseUrl();
-        homePage.citySeriesCapsContainsTwelveCaps();
+        homePage.clickOnCitySeriesCapsPage();
+        citySeriesCapsPage.citySeriesCapsShouldContainsTwelveCaps();
     }
 
     @Test
-    public void checkThatTeenageMutantNinjaTurtlesContainsTwelveCaps() throws InterruptedException {
+    public void checkThatTeenageMutantNinjaTurtlesContainsTwelveCaps() {
         homePage.openBaseUrl();
-        homePage.teenageMutantNinjaTurtlesContainsTwelveCaps();
+        homePage.clickOnTeenageMutantNinjaTurtlesCapsPage();
+        teenageMutantNinjaTurtlesCapsPage.teenageMutantNinjaTurtlesShouldContainsTwelveCaps();
     }
 
     @Test
     public void checkThatNflPlayOffsCapsContainsTwelveCaps() {
         homePage.openBaseUrl();
-        homePage.nflPlayOffsCapsContainsTwelveCaps();
+        homePage.clickOnNflPlayOffsCapsPage();
+        nflPlayoffsCapsPage.nflPlayOffsCapsShouldContainTwelveCaps();
     }
 
     @Test
     public void checkThatAstrologyClothesContainsTwelveCaps() {
         homePage.openBaseUrl();
-        homePage.astrologyClothesContainsTwelveCaps();
+        homePage.clickOnAstrologyClothesPage();
+        astrologyCapsPage.astrologyClothesShouldContainTwelveClothes();
     }
 
 }

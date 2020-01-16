@@ -5,13 +5,16 @@
       <change afterPath="$PROJECT_DIR$/../Lessons/Java/17 lecture(Servlet Core)/task_with_servlets/task_with_servlets.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Parsing/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Parsing/testForParse.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps/AstrologyCapsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps/CitySeriesCapsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps/NflPlayoffsCapsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps/TeenageMutantNinjaTurtlesCapsPage.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../superpuper.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../supertest.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neweracap/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neweracap/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neweracap/src/test/java/LogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/test/java/NewEraCapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neweracap/src/test/java/NewEraCapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/test/java/NewEraCapTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +172,7 @@
       <updated>1579006650145</updated>
       <workItem from="1579006653028" duration="1345000" />
       <workItem from="1579009783944" duration="9165000" />
-      <workItem from="1579086527848" duration="12532000" />
+      <workItem from="1579086527848" duration="15435000" />
     </task>
     <task id="LOCAL-00001" summary="1st push">
       <created>1579006824076</created>
@@ -185,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579099474692</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added tests with collections">
+      <created>1579105197852</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579105197852</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +216,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="1st push" />
     <MESSAGE value="added some pages and tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some pages and tests" />
+    <MESSAGE value="added tests with collections" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests with collections" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1579013346179">
@@ -217,10 +228,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="379" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1579013284019" />
-    <state x="105" y="117" key="CommitChangelistDialog2" timestamp="1579099676802">
+    <state x="105" y="117" key="CommitChangelistDialog2" timestamp="1579105196063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="105" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579099676802" />
+    <state x="105" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579105196063" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1579099403205">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -245,10 +256,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579103860757" />
-    <state x="72" y="256" key="Vcs.Push.Dialog.v2" timestamp="1579099513925">
+    <state x="72" y="256" key="Vcs.Push.Dialog.v2" timestamp="1579105201080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="72" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579099513925" />
+    <state x="72" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579105201080" />
     <state x="316" y="430" key="new project wizard" timestamp="1579009572949">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,10 +1,8 @@
 package pages;
 
-import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -19,11 +17,6 @@ public class HomePage {
     private SelenideElement nflPlayOffsCaps = $x("(//a[@class='nwer-button-default js-ucp-btn '])[3]");
     private SelenideElement astrologyClothes = $x("(//a[@class='nwer-button-default js-ucp-btn '])[4]");
 
-    private ElementsCollection citySeriesCapsElements = $$x("(//a[@class='j-ga-spy'])");
-    private ElementsCollection teenageMutantNinjaTurtlesElements = $$x("(//a[@class='j-ga-spy'])");
-    private ElementsCollection nflPlayOffsCapsElements = $$x("(//a[@class='j-ga-spy'])");
-    private ElementsCollection astrologyClothesElements = $$x("(//a[@class='j-ga-spy'])");
-
     public HomePage openBaseUrl() {
         open(HOME_URL);
         return this;
@@ -34,27 +27,23 @@ public class HomePage {
         return this;
     }
 
-    public HomePage citySeriesCapsContainsTwelveCaps() {
+    public HomePage clickOnCitySeriesCapsPage() {
         citySeriesCaps.shouldBe(visible).click();
-        citySeriesCapsElements.shouldHaveSize(12);
         return this;
     }
 
-    public HomePage teenageMutantNinjaTurtlesContainsTwelveCaps() {
+    public HomePage clickOnTeenageMutantNinjaTurtlesCapsPage() {
         teenageMutantNinjaTurtles.shouldBe(visible).click();
-        teenageMutantNinjaTurtlesElements.shouldHaveSize(12);
         return this;
     }
 
-    public HomePage nflPlayOffsCapsContainsTwelveCaps() {
+    public HomePage clickOnNflPlayOffsCapsPage() {
         nflPlayOffsCaps.shouldBe(visible).click();
-        nflPlayOffsCapsElements.shouldHaveSize(12);
         return this;
     }
 
-    public HomePage astrologyClothesContainsTwelveCaps() {
+    public HomePage clickOnAstrologyClothesPage() {
         astrologyClothes.shouldBe(visible).click();
-        astrologyClothesElements.shouldHaveSize(12);
         return this;
     }
 }
