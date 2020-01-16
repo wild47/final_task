@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.$$x;
 
 public class CitySeriesCapsPage {
 
-    private ElementsCollection citySeriesCapsElements = $$x("(//a[@class='j-ga-spy'])");
+    private ElementsCollection citySeriesCapsElements = $$x("(//p[@class='j-ga-spy'])");
 
     public CitySeriesCapsPage citySeriesCapsShouldContainsTwelveCaps() {
         citySeriesCapsElements.shouldHaveSize(12);

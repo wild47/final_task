@@ -24,7 +24,7 @@ public class LogInPage {
         return this;
     }
 
-    public LogInPage clickSubmitButton(){
+    public LogInPage clickSubmitButton() {
         submitButton.click();
         return this;
     }

@@ -11,7 +11,6 @@ import pages.caps.NflPlayoffsCapsPage;
 import pages.caps.TeenageMutantNinjaTurtlesCapsPage;
 
 import static com.codeborne.selenide.Configuration.startMaximized;
-import static com.codeborne.selenide.Configuration.timeout;
 import static com.codeborne.selenide.Selenide.clearBrowserCookies;
 import static com.codeborne.selenide.WebDriverRunner.isChrome;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -29,7 +28,6 @@ public class NewEraCapTest {
     public void setUp() {
         isChrome();
         startMaximized = true;
-        timeout = 4000;
         homePage = new HomePage();
         logInPage = new LogInPage();
         citySeriesCapsPage = new CitySeriesCapsPage();

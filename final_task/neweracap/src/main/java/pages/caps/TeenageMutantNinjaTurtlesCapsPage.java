@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.$$x;
 
 public class TeenageMutantNinjaTurtlesCapsPage {
 
-    private ElementsCollection teenageMutantNinjaTurtlesElements = $$x("(//a[@class='j-ga-spy'])");
+    private ElementsCollection teenageMutantNinjaTurtlesElements = $$x("(//p[@class='j-ga-spy'])");
 
     public TeenageMutantNinjaTurtlesCapsPage teenageMutantNinjaTurtlesShouldContainsTwelveCaps() {
         teenageMutantNinjaTurtlesElements.shouldHaveSize(12);
