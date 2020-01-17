@@ -1,3 +1,4 @@
+import lombok.Getter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import pages.HomePage;
@@ -11,14 +12,16 @@ import static com.codeborne.selenide.Configuration.startMaximized;
 import static com.codeborne.selenide.Selenide.clearBrowserCookies;
 import static com.codeborne.selenide.WebDriverRunner.isChrome;
 
+@Getter
 public class Configuration {
 
-    public static HomePage homePage;
-    public static LogInPage logInPage;
-    public static CitySeriesCapsPage citySeriesCapsPage;
-    public static TeenageMutantNinjaTurtlesCapsPage teenageMutantNinjaTurtlesCapsPage;
-    public static NflPlayoffsCapsPage nflPlayoffsCapsPage;
-    public static AstrologyCapsPage astrologyCapsPage;
+
+    private HomePage homePage;
+    private LogInPage logInPage;
+    private CitySeriesCapsPage citySeriesCapsPage;
+    private TeenageMutantNinjaTurtlesCapsPage teenageMutantNinjaTurtlesCapsPage;
+    private NflPlayoffsCapsPage nflPlayoffsCapsPage;
+    private AstrologyCapsPage astrologyCapsPage;
 
     @BeforeClass
     public void setUp() {

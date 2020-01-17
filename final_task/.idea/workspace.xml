@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc50a15b-7881-420a-8633-14ead3087d14" name="Default Changelist" comment="minor changes for better working">
-      <change afterPath="$PROJECT_DIR$/neweracap/src/test/java/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neweracap/src/test/java/pages/caps_pages/CapsElementsPagesTest.java" afterDir="false" />
+    <list default="true" id="dc50a15b-7881-420a-8633-14ead3087d14" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps/AstrologyCapsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps_pages/AstrologyCapsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps/CitySeriesCapsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps_pages/CitySeriesCapsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps/NflPlayoffsCapsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps_pages/NflPlayoffsCapsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps/TeenageMutantNinjaTurtlesCapsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/caps_pages/TeenageMutantNinjaTurtlesCapsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neweracap/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neweracap/src/test/java/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/test/java/Configuration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neweracap/src/test/java/NewEraCapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/test/java/NewEraCapTest.java" afterDir="false" />
     </list>
     <list id="56c9698e-4580-4833-a10a-033b76ff6e2f" name="minor changes for better working" comment="">
@@ -65,6 +61,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -182,7 +179,7 @@
       <workItem from="1579086527848" duration="22557000" />
       <workItem from="1579188419499" duration="145000" />
       <workItem from="1579188586137" duration="1309000" />
-      <workItem from="1579189923049" duration="292000" />
+      <workItem from="1579189923049" duration="3115000" />
     </task>
     <task id="LOCAL-00001" summary="1st push">
       <created>1579006824076</created>
@@ -233,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579188499006</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="minor changes">
+      <created>1579190246973</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1579190246973</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,9 +262,9 @@
     <MESSAGE value="added some pages and tests" />
     <MESSAGE value="added tests with collections" />
     <MESSAGE value="added pages for collection pages" />
-    <MESSAGE value="minor changes" />
     <MESSAGE value="minor changes for better working" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor changes for better working" />
+    <MESSAGE value="minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1579013346179">
@@ -271,10 +275,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="379" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1579013284019" />
-    <state x="105" y="117" key="CommitChangelistDialog2" timestamp="1579188497164">
+    <state x="105" y="117" key="CommitChangelistDialog2" timestamp="1579267707233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="105" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579188497164" />
+    <state x="105" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579267707233" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1579099403205">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -303,10 +307,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="435" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579188200391" />
-    <state x="72" y="256" key="Vcs.Push.Dialog.v2" timestamp="1579188550327">
+    <state x="72" y="256" key="Vcs.Push.Dialog.v2" timestamp="1579190250827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="72" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579188550327" />
+    <state x="72" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579190250827" />
     <state x="316" y="430" key="new project wizard" timestamp="1579009572949">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
