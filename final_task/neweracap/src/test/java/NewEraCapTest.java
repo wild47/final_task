@@ -21,7 +21,7 @@ public class NewEraCapTest extends Configuration {
     }
 
     // TODO rename test method
-    @Test
+    @Test(dataProvider = JSON, dataProviderClass = JsonHelper.class)
     public void forgetPasswordTest(String email) {
         getHomePage().openBaseUrl()
                 .clickOnSignInRegisterButton();
@@ -32,33 +32,33 @@ public class NewEraCapTest extends Configuration {
                 .checkThatForgotPasswordButtonIsNotExistAfterPasswordReset();
     }
 
-    @Test
-    public void checkThatSearchWorksCorrect() {
+    @Test(dataProvider = JSON, dataProviderClass = JsonHelper.class)
+    public void checkThatSearchWorksCorrect(String dataForSearching) {
         getHomePage().openBaseUrl()
-                .searchSomeData("MLB");
-        getSearchResultPage().checkThatResultPageContainsSearchInput("MLB");
+                .searchSomeData(dataForSearching);
+        getSearchResultPage().checkThatResultPageContainsSearchInput(dataForSearching);
     }
 
-    @Test
-    public void checkThatResultPageContainsSoManyCapsAsIndicated() {
+    @Test(dataProvider = JSON, dataProviderClass = JsonHelper.class)
+    public void checkThatResultPageContainsSoManyCapsAsIndicated(String dataForSearching) {
         getHomePage().openBaseUrl()
-                .searchSomeData("MLB");
-        getSearchResultPage().checkThatResultPageContainsSearchInput("MLB")
+                .searchSomeData(dataForSearching);
+        getSearchResultPage().checkThatResultPageContainsSearchInput(dataForSearching)
                 .resultPageContainsTwelveCaps()
                 .resultPageContainsTwentyFourCaps()
                 .resultPageContainsFortyEightCaps();
     }
 
-    @Test
-    public void checkThatRegistrationCompleteSuccessfully() {
+    @Test(dataProvider = JSON, dataProviderClass = JsonHelper.class)
+    public void checkThatRegistrationCompleteSuccessfully(String firstName, String lastName, String password) {
         getHomePage().openBaseUrl()
                 .clickOnSignInRegisterButton();
         getLogInRegistrationPage()
-                .enterFirstNameToRegistrationField("aaaa")
-                .enterLastNameToRegistrationField("aaa")
+                .enterFirstNameToRegistrationField(firstName)
+                .enterLastNameToRegistrationField(lastName)
                 .enterEmailToRegistrationField()
-                .enterPasswordToRegistrationField("qwerty123qwerty")
-                .confirmPasswordToRegistrationField("qwerty123qwerty")
+                .enterPasswordToRegistrationField(password)
+                .confirmPasswordToRegistrationField(password)
                 .clickRegister()
                 .checkThatPopUpSuccessfulRegistrationDisplayed();
     }

@@ -9,5 +9,22 @@
     {
       "email": "google@google.com"
     }
+  ],
+  "checkThatSearchWorksCorrect": [
+    {
+      "dataForSearching": "MLB"
+    }
+  ],
+  "checkThatResultPageContainsSoManyCapsAsIndicated": [
+    {
+      "dataForSearching": "MLB"
+    }
+  ],
+  "checkThatRegistrationCompleteSuccessfully": [
+    {
+      "firstName": "Super",
+      "lastName": "Puper",
+      "password": "qwerty123qwerty"
+    }
   ]
 }
