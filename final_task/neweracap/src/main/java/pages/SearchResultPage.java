@@ -27,17 +27,23 @@ public class SearchResultPage {
         return this;
     }
 
-    public SearchResultPage resultPageContainsSoManyCapsAsIndicated() {
+    public SearchResultPage resultPageContainsTwelveCaps() {
         dropDownMenuOfCountOfCaps.shouldBe(visible).click();
         twelveCaps.shouldBe(visible).click();
         pagination.scrollTo().shouldBe(visible);
         collectionOfCaps.shouldHaveSize(12);
+        return this;
+    }
 
+    public SearchResultPage resultPageContainsTwentyFourCaps() {
         dropDownMenuOfCountOfCaps.shouldBe(visible).click();
         twentyFourCaps.shouldBe(visible).click();
         pagination.scrollTo().shouldBe(visible);
         collectionOfCaps.shouldHaveSize(24);
+        return this;
+    }
 
+    public SearchResultPage resultPageContainsFortyEightCaps() {
         dropDownMenuOfCountOfCaps.shouldBe(visible).click();
         fortyEightCaps.shouldBe(visible).click();
         pagination.scrollTo().shouldBe(visible);

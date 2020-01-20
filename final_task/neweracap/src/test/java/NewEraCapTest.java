@@ -42,7 +42,9 @@ public class NewEraCapTest extends Configuration {
         getHomePage().openBaseUrl()
                 .searchSomeData("MLB");
         getSearchResultPage().checkThatResultPageContainsSearchInput("MLB")
-                .resultPageContainsSoManyCapsAsIndicated();
+                .resultPageContainsTwelveCaps()
+                .resultPageContainsTwentyFourCaps()
+                .resultPageContainsFortyEightCaps();
     }
 
     @Test
