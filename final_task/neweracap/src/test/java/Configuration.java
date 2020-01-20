@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Selenide;
 import lombok.Getter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -11,6 +12,7 @@ import pages.caps_pages.TeenageMutantNinjaTurtlesCapsPage;
 
 import static com.codeborne.selenide.Configuration.startMaximized;
 import static com.codeborne.selenide.Selenide.clearBrowserCookies;
+import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.WebDriverRunner.isChrome;
 
 @Getter
@@ -40,6 +42,7 @@ public class Configuration {
 
     @AfterClass
     public void shutDown() {
+        closeWebDriver();
         clearBrowserCookies();
     }
 

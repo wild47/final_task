@@ -6,13 +6,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class NewEraCapTest extends Configuration {
 
+    private static final String JSON = "JSON";
+
     // TODO rename test method
-    @Test
-    public void logIn() {
+    @Test(dataProvider = JSON, dataProviderClass = JsonHelper.class)
+    public void logIn(String email, String password) {
         getHomePage().openBaseUrl()
                 .clickOnSignInRegisterButton();
-        getLogInRegistrationPage().enterEmailToLogInField("metig18651@sammail.ws")
-                .enterPasswordToLogInField("qwerty123QwErTy")
+        getLogInRegistrationPage().enterEmailToLogInField(email)
+                .enterPasswordToLogInField(password)
                 .clickSignInButton();
 
         assertThat(Selenide.$(By.xpath("//a[contains(@class,'myAccountLinksHeader collapsed')]")).isDisplayed());
@@ -20,11 +22,11 @@ public class NewEraCapTest extends Configuration {
 
     // TODO rename test method
     @Test
-    public void forgetPasswordTest() {
+    public void forgetPasswordTest(String email) {
         getHomePage().openBaseUrl()
                 .clickOnSignInRegisterButton();
         getLogInRegistrationPage().clickForgotPasswordButton()
-                .resetPassword("google@google.com")
+                .resetPassword(email)
                 .checkThatPopUpExist()
                 .closePopUp()
                 .checkThatForgotPasswordButtonIsNotExistAfterPasswordReset();

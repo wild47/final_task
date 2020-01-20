@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc50a15b-7881-420a-8633-14ead3087d14" name="Default Changelist" comment="">
+    <list default="true" id="dc50a15b-7881-420a-8633-14ead3087d14" name="Default Changelist" comment="method refactored">
       <change afterPath="$PROJECT_DIR$/../2020-01-17_18h31_25.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Lessons/final_task" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neweracap/src/test/java/JsonHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/test/resources/jsonData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neweracap/src/main/java/pages/SearchResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/SearchResultPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neweracap/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neweracap/src/test/java/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/test/java/Configuration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neweracap/src/test/java/NewEraCapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/test/java/NewEraCapTest.java" afterDir="false" />
     </list>
     <list id="56c9698e-4580-4833-a10a-033b76ff6e2f" name="minor changes for better working" comment="">
@@ -15,7 +18,6 @@
       <change afterPath="$PROJECT_DIR$/neweracap/debug.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../superpuper.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../supertest.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +69,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lessons/Java/aqa-rd-java-q3" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -87,7 +89,7 @@
       <recent name="C:\Users\Dmytro_Adamtsev\Desktop\final_task" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.NewEraCapTest.checkThatResultPageContainsSoManyCapsAsIndicated">
+  <component name="RunManager" selected="TestNG.NewEraCapTest.logIn">
     <configuration name="NewEraCapTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="neweracap" />
       <option name="PACKAGE_NAME" value="" />
@@ -123,11 +125,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewEraCapTest.checkThatSearchWorksCorrect" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="NewEraCapTest.forgetPasswordTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="neweracap" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="NewEraCapTest" />
-      <option name="METHOD_NAME" value="checkThatSearchWorksCorrect" />
+      <option name="METHOD_NAME" value="forgetPasswordTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -149,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.NewEraCapTest.logIn" />
+        <item itemvalue="TestNG.NewEraCapTest" />
+        <item itemvalue="TestNG.NewEraCapTest.forgetPasswordTest" />
         <item itemvalue="TestNG.NewEraCapTest.checkThatResultPageContainsSoManyCapsAsIndicated" />
         <item itemvalue="TestNG.NewEraCapTest.checkThatRegistrationCompleteSuccessfully" />
-        <item itemvalue="TestNG.NewEraCapTest.logIn" />
-        <item itemvalue="TestNG.NewEraCapTest.checkThatSearchWorksCorrect" />
-        <item itemvalue="TestNG.NewEraCapTest" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +188,7 @@
       <workItem from="1579188419499" duration="145000" />
       <workItem from="1579188586137" duration="1309000" />
       <workItem from="1579189923049" duration="3647000" />
-      <workItem from="1579268277830" duration="17518000" />
+      <workItem from="1579268277830" duration="23167000" />
     </task>
     <task id="LOCAL-00001" summary="1st push">
       <created>1579006824076</created>
@@ -258,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579527338818</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="method refactored">
+      <created>1579527869600</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1579527869600</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,45 +296,46 @@
     <MESSAGE value="minor changes" />
     <MESSAGE value="added @getter for configuration class" />
     <MESSAGE value="added new tests and new page with a lot of new methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new tests and new page with a lot of new methods" />
+    <MESSAGE value="method refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="method refactored" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1579013346179">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1579531724186">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579013346179" />
-    <state x="756" y="379" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1579268484498">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579531724186" />
+    <state x="756" y="379" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1579532690524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="756" y="379" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1579268484498" />
+    <state x="756" y="379" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1579532690524" />
     <state x="627" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579522396414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579522396414" />
-    <state x="105" y="117" key="CommitChangelistDialog2" timestamp="1579527851446">
+    <state x="105" y="117" key="CommitChangelistDialog2" timestamp="1579527868297">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="105" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579527851446" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1579099403205">
+    <state x="105" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579527868297" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1579529482621">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579099403205" />
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1579527851477">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579529482621" />
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1579533630812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579527851477" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1579527851477">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579533630812" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1579533630812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579527851477" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1579527851477">
+    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579533630812" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1579533630812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579527851477" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1579527851477">
+    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579533630812" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1579533630812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579527851477" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579533630812" />
     <state x="775" y="453" key="ReplaceDuplicatesPrompt" timestamp="1579527517290">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

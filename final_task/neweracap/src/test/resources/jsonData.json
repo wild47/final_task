@@ -1,0 +1,13 @@
+{
+  "logIn": [
+    {
+      "email": "metig18651@sammail.ws",
+      "password": "qwerty123QwErTy"
+    }
+  ],
+  "forgetPasswordTest": [
+    {
+      "email": "google@google.com"
+    }
+  ]
+}
