@@ -18,6 +18,7 @@ public class LogInRegistrationPage {
     private SelenideElement emailFieldToLogInField = $(id("j_username"));
     private SelenideElement passwordFieldToLogInField = $(id("j_password"));
     private SelenideElement signInButton = $(id("loginFormBtn"));
+    private SelenideElement myAccountField = $x("//a[contains(@class,'myAccountLinksHeader collapsed')]");
 
     private SelenideElement firstNameToRegistrationField = $(id("register.firstName"));
     private SelenideElement lastNameToRegistrationField = $(id("register.lastName"));
@@ -47,6 +48,11 @@ public class LogInRegistrationPage {
 
     public LogInRegistrationPage clickSignInButton() {
         signInButton.shouldBe(visible).click();
+        return this;
+    }
+
+    public LogInRegistrationPage checkThatMyAccountInfoIsDisplayed() {
+        myAccountField.shouldBe(visible, exist);
         return this;
     }
 

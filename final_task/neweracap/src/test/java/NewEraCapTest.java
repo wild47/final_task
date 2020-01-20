@@ -1,28 +1,21 @@
-import com.codeborne.selenide.Selenide;
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class NewEraCapTest extends Configuration {
 
     private static final String JSON = "JSON";
 
-    // TODO rename test method
     @Test(dataProvider = JSON, dataProviderClass = JsonHelper.class)
-    public void logIn(String email, String password) {
+    public void userShouldLogIn(String email, String password) {
         getHomePage().openBaseUrl()
                 .clickOnSignInRegisterButton();
         getLogInRegistrationPage().enterEmailToLogInField(email)
                 .enterPasswordToLogInField(password)
-                .clickSignInButton();
-
-        assertThat(Selenide.$(By.xpath("//a[contains(@class,'myAccountLinksHeader collapsed')]")).isDisplayed());
+                .clickSignInButton()
+                .checkThatMyAccountInfoIsDisplayed();
     }
 
-    // TODO rename test method
     @Test(dataProvider = JSON, dataProviderClass = JsonHelper.class)
-    public void forgetPasswordTest(String email) {
+    public void userShouldRestorePassword(String email) {
         getHomePage().openBaseUrl()
                 .clickOnSignInRegisterButton();
         getLogInRegistrationPage().clickForgotPasswordButton()

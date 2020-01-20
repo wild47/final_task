@@ -5,6 +5,8 @@
       <change afterPath="$PROJECT_DIR$/../2020-01-17_18h31_25.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Lessons/final_task" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neweracap/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/neweracap/src/main/java/pages/LogInRegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/main/java/pages/LogInRegistrationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neweracap/src/test/java/NewEraCapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/test/java/NewEraCapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/neweracap/src/test/resources/jsonData.json" beforeDir="false" afterPath="$PROJECT_DIR$/neweracap/src/test/resources/jsonData.json" afterDir="false" />
     </list>
@@ -86,24 +88,12 @@
       <recent name="C:\Users\Dmytro_Adamtsev\Desktop\final_task" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.NewEraCapTest.forgetPasswordTest">
+  <component name="RunManager" selected="TestNG.NewEraCapTest.userShouldRestorePassword">
     <configuration name="NewEraCapTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="neweracap" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="NewEraCapTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewEraCapTest.checkThatRegistrationCompleteSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="neweracap" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NewEraCapTest" />
-      <option name="METHOD_NAME" value="checkThatRegistrationCompleteSuccessfully" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -134,11 +124,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewEraCapTest.logIn" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="NewEraCapTest.userShouldLogIn" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="neweracap" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="NewEraCapTest" />
-      <option name="METHOD_NAME" value="logIn" />
+      <option name="METHOD_NAME" value="userShouldLogIn" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewEraCapTest.userShouldRestorePassword" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="neweracap" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NewEraCapTest" />
+      <option name="METHOD_NAME" value="userShouldRestorePassword" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -148,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.NewEraCapTest.forgetPasswordTest" />
+        <item itemvalue="TestNG.NewEraCapTest.userShouldRestorePassword" />
+        <item itemvalue="TestNG.NewEraCapTest.userShouldLogIn" />
         <item itemvalue="TestNG.NewEraCapTest" />
-        <item itemvalue="TestNG.NewEraCapTest.logIn" />
         <item itemvalue="TestNG.NewEraCapTest.checkThatResultPageContainsSoManyCapsAsIndicated" />
-        <item itemvalue="TestNG.NewEraCapTest.checkThatRegistrationCompleteSuccessfully" />
+        <item itemvalue="TestNG.NewEraCapTest.forgetPasswordTest" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +187,7 @@
       <workItem from="1579188419499" duration="145000" />
       <workItem from="1579188586137" duration="1309000" />
       <workItem from="1579189923049" duration="3647000" />
-      <workItem from="1579268277830" duration="24981000" />
+      <workItem from="1579268277830" duration="27174000" />
     </task>
     <task id="LOCAL-00001" summary="1st push">
       <created>1579006824076</created>
@@ -271,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579533672482</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added data for tests">
+      <created>1579536101385</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1579536101385</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +311,8 @@
     <MESSAGE value="added new tests and new page with a lot of new methods" />
     <MESSAGE value="method refactored" />
     <MESSAGE value="added dataprovider from json file" />
-    <option name="LAST_COMMIT_MESSAGE" value="added dataprovider from json file" />
+    <MESSAGE value="added data for tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added data for tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1579531724186">
@@ -317,30 +327,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579522396414" />
-    <state x="105" y="117" key="CommitChangelistDialog2" timestamp="1579533671080">
+    <state x="105" y="117" key="CommitChangelistDialog2" timestamp="1579536100208">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="105" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579533671080" />
+    <state x="105" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579536100208" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1579529482621">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579529482621" />
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1579534254347">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1579538176541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579534254347" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1579534254347">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579538176541" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1579538176541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579534254347" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1579534254347">
+    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579538176541" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1579538176541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579534254347" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1579534254347">
+    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579538176541" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1579538176541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579534254347" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579538176541" />
     <state x="775" y="453" key="ReplaceDuplicatesPrompt" timestamp="1579527517290">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -353,10 +363,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="435" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579188200391" />
-    <state x="72" y="256" key="Vcs.Push.Dialog.v2" timestamp="1579533675344">
+    <state x="72" y="256" key="Vcs.Push.Dialog.v2" timestamp="1579536103754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="72" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579533675344" />
+    <state x="72" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579536103754" />
     <state x="756" y="344" width="540" height="499" key="extract.method.dialog" timestamp="1579527503888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

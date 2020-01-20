@@ -1,11 +1,11 @@
 {
-  "logIn": [
+  "userShouldLogIn": [
     {
-      "email": "metig18651@sammail.ws",
+      "email": "googleepam@gmail.com",
       "password": "qwerty123QwErTy"
     }
   ],
-  "forgetPasswordTest": [
+  "userShouldRestorePassword": [
     {
       "email": "google@google.com"
     }

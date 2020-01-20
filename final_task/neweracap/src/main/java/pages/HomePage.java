@@ -29,7 +29,7 @@ public class HomePage {
     }
 
     public HomePage clickOnSignInRegisterButton() {
-        signInRegisterButton.pressEnter();
+        signInRegisterButton.shouldBe(visible).pressEnter();
         return this;
     }
 
