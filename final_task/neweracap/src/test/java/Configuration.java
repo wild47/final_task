@@ -2,7 +2,8 @@ import lombok.Getter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import pages.HomePage;
-import pages.LogInPage;
+import pages.LogInRegistrationPage;
+import pages.SearchResultPage;
 import pages.caps_pages.AstrologyCapsPage;
 import pages.caps_pages.CitySeriesCapsPage;
 import pages.caps_pages.NflPlayoffsCapsPage;
@@ -15,9 +16,9 @@ import static com.codeborne.selenide.WebDriverRunner.isChrome;
 @Getter
 public class Configuration {
 
-
     private HomePage homePage;
-    private LogInPage logInPage;
+    private LogInRegistrationPage logInRegistrationPage;
+    private SearchResultPage searchResultPage;
     private CitySeriesCapsPage citySeriesCapsPage;
     private TeenageMutantNinjaTurtlesCapsPage teenageMutantNinjaTurtlesCapsPage;
     private NflPlayoffsCapsPage nflPlayoffsCapsPage;
@@ -25,10 +26,12 @@ public class Configuration {
 
     @BeforeClass
     public void setUp() {
+        clearBrowserCookies();
         isChrome();
         startMaximized = true;
         homePage = new HomePage();
-        logInPage = new LogInPage();
+        logInRegistrationPage = new LogInRegistrationPage();
+        searchResultPage = new SearchResultPage();
         citySeriesCapsPage = new CitySeriesCapsPage();
         teenageMutantNinjaTurtlesCapsPage = new TeenageMutantNinjaTurtlesCapsPage();
         nflPlayoffsCapsPage = new NflPlayoffsCapsPage();

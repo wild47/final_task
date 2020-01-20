@@ -6,42 +6,56 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class NewEraCapTest extends Configuration {
 
+    // TODO rename test method
     @Test
     public void logIn() {
-        getHomePage().openBaseUrl();
-        getHomePage().clickOnSignInRegisterButton();
-        getLogInPage().enterEmail("metig18651@sammail.ws")
-                .enterPassword("qwerty123QwErTy")
-                .clickSubmitButton();
+        getHomePage().openBaseUrl()
+                .clickOnSignInRegisterButton();
+        getLogInRegistrationPage().enterEmailToLogInField("metig18651@sammail.ws")
+                .enterPasswordToLogInField("qwerty123QwErTy")
+                .clickSignInButton();
 
         assertThat(Selenide.$(By.xpath("//a[contains(@class,'myAccountLinksHeader collapsed')]")).isDisplayed());
     }
 
+    // TODO rename test method
     @Test
-    public void checkThatCitySeriesCapsContainsTwelveCaps() {
-        getHomePage().openBaseUrl();
-        getHomePage().clickOnCitySeriesCapsPage();
-        getCitySeriesCapsPage().citySeriesCapsShouldContainsTwelveCaps();
+    public void forgetPasswordTest() {
+        getHomePage().openBaseUrl()
+                .clickOnSignInRegisterButton();
+        getLogInRegistrationPage().clickForgotPasswordButton()
+                .resetPassword("google@google.com")
+                .checkThatPopUpExist()
+                .closePopUp()
+                .checkThatForgotPasswordButtonIsNotExistAfterPasswordReset();
     }
 
     @Test
-    public void checkThatTeenageMutantNinjaTurtlesContainsTwelveCaps() {
-        getHomePage().openBaseUrl();
-        getHomePage().clickOnTeenageMutantNinjaTurtlesCapsPage();
-        getTeenageMutantNinjaTurtlesCapsPage().teenageMutantNinjaTurtlesShouldContainsTwelveCaps();
+    public void checkThatSearchWorksCorrect() {
+        getHomePage().openBaseUrl()
+                .searchSomeData("MLB");
+        getSearchResultPage().checkThatResultPageContainsSearchInput("MLB");
     }
 
     @Test
-    public void checkThatNflPlayOffsCapsContainsTwelveCaps() {
-        getHomePage().openBaseUrl();
-        getHomePage().clickOnNflPlayOffsCapsPage();
-        getNflPlayoffsCapsPage().nflPlayOffsCapsShouldContainTwelveCaps();
+    public void checkThatResultPageContainsSoManyCapsAsIndicated() {
+        getHomePage().openBaseUrl()
+                .searchSomeData("MLB");
+        getSearchResultPage().checkThatResultPageContainsSearchInput("MLB")
+                .resultPageContainsSoManyCapsAsIndicated();
     }
 
     @Test
-    public void checkThatAstrologyClothesContainsTwelveCaps() {
-        getHomePage().openBaseUrl();
-        getHomePage().clickOnAstrologyClothesPage();
-        getAstrologyCapsPage().astrologyClothesShouldContainTwelveClothes();
+    public void checkThatRegistrationCompleteSuccessfully() {
+        getHomePage().openBaseUrl()
+                .clickOnSignInRegisterButton();
+        getLogInRegistrationPage()
+                .enterFirstNameToRegistrationField("aaaa")
+                .enterLastNameToRegistrationField("aaa")
+                .enterEmailToRegistrationField()
+                .enterPasswordToRegistrationField("qwerty123qwerty")
+                .confirmPasswordToRegistrationField("qwerty123qwerty")
+                .clickRegister()
+                .checkThatPopUpSuccessfulRegistrationDisplayed();
     }
 }
