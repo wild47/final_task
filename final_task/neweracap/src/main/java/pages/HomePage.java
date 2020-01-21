@@ -15,11 +15,6 @@ public class HomePage {
 
     private SelenideElement signInRegisterButton = $x("//a[@href='/login']");
 
-    private SelenideElement citySeriesCaps = $x("(//a[@class='nwer-button-default js-ucp-btn '])[1]");
-    private SelenideElement teenageMutantNinjaTurtles = $x("(//a[@class='nwer-button-default js-ucp-btn '])[2]");
-    private SelenideElement nflPlayOffsCaps = $x("(//a[@class='nwer-button-default js-ucp-btn '])[3]");
-    private SelenideElement astrologyClothes = $x("(//a[@class='nwer-button-default js-ucp-btn '])[4]");
-
     private SelenideElement searchButton = $x("//div[@class='ui-front']");
     private SelenideElement searchField = $(className("js-site-search-input"));
 
@@ -30,26 +25,6 @@ public class HomePage {
 
     public HomePage clickOnSignInRegisterButton() {
         signInRegisterButton.shouldBe(visible).pressEnter();
-        return this;
-    }
-
-    public HomePage clickOnCitySeriesCapsPage() {
-        citySeriesCaps.shouldBe(visible).pressEnter();
-        return this;
-    }
-
-    public HomePage clickOnTeenageMutantNinjaTurtlesCapsPage() {
-        teenageMutantNinjaTurtles.shouldBe(visible).pressEnter();
-        return this;
-    }
-
-    public HomePage clickOnNflPlayOffsCapsPage() {
-        nflPlayOffsCaps.shouldBe(visible).pressEnter();
-        return this;
-    }
-
-    public HomePage clickOnAstrologyClothesPage() {
-        astrologyClothes.shouldBe(visible).pressEnter();
         return this;
     }
 
