@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test suite" parallel="tests" thread-count="5" preserve-order="true">
+    <test name="logInTests">
+        <classes>
+            <class name="NewEraCapTest">
+                <methods>
+                    <include name="userShouldLogIn"/>
+                    <include name="userShouldRestorePassword"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="other">
+        <classes>
+            <class name="NewEraCapTest">
+                <methods>
+                    <include name="checkThatSearchWorksCorrect"/>
+                    <include name="checkThatResultPageContainsSoManyCapsAsIndicated"/>
+                    <include name="checkThatRegistrationCompleteSuccessfully"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
